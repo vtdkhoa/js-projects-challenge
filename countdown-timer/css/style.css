@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/mountain.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto Mono', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 1rem 3rem;
+}
+
+.countdown-element {
+  text-align: center;
+}
+
+.countdown-element span {
+  font-size: 1.3rem;
+}
