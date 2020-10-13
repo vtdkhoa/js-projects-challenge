@@ -160,6 +160,13 @@ function showMealInfo(mealData) {
   mealPopup.classList.remove('hidden')
 }
 
+function showMessage() {
+  const message = document.createElement('span')
+  message.className = 'message'
+  message.innerHTML = 'No meals were found !'
+  mealsElement.appendChild(message)
+}
+
 search.addEventListener('click', async () => {
   // clean container
   mealsElement.innerHTML = ''
@@ -170,6 +177,10 @@ search.addEventListener('click', async () => {
     meals.forEach(meal => {
       addMeal(meal)
     })
+    searchTerm.value = ''
+  } else {
+    showMessage()
+    searchTerm.value = ''
   }
 })
 

@@ -196,3 +196,11 @@ header button {
 .meal-info h1 {
   text-align: center;
 }
+
+.message {
+  padding: 5px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
